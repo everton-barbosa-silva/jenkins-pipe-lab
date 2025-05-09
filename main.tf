@@ -13,3 +13,9 @@ resource "aws_instance" "jenkins_target" {
   }
 }
 
+
+
+resource "aws_key_pair" "default" {
+  key_name   = "jenkins"
+  public_key = file("~/.ssh/id_rsa.pub")
+}
