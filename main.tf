@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "jenkins_target" {
-  ami                    = "ami-0c7217cdde317cfec" 
+  ami                    = "ami-084568db4383264d4" 
   instance_type          = "t2.micro"
   key_name               = aws_key_pair.default.key_name
   associate_public_ip_address = true
